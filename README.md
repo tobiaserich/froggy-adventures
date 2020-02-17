@@ -1,3 +1,12 @@
+# Froggy Adventures
+
+Froggy Adventures is a new Chapter for "Grumpy Froggy" who escaped the popular game Flexbox Froggy.  
+Now he is on a journey from CSS selectors to JS and so on...
+
+## Grumpy Froggy
+
+![alt text](./public/images/froggy.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
