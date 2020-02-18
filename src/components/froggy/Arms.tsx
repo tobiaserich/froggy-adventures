@@ -30,7 +30,7 @@ const HandLeft = styled("div")`
   bottom: 0%;
   left: 24.2%;
   border-radius: 80% 5% 0% 0%;
-  opacity: 0;
+  opacity: 1;
 `;
 
 const ArmRight = styled("div")`
