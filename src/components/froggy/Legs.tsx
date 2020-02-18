@@ -21,6 +21,7 @@ const UpperLegLeft = styled("div")<Props>`
   border-radius: 50% 50% 0% 45%;
   transform-origin: bottom;
   transform: rotate(-10.5deg);
+
   animation: ${({ animation }: Props) =>
       animation === "yes" ? "animationLeftUpperLeg" : "none"}
     1s forwards;
@@ -60,6 +61,7 @@ const FootLeft = styled("div")`
   opacity: 1;
   position: absolute;
   bottom: 0;
+
   left: 8.8%;
   border-radius: 80% 0% 00% 00%;
 `;
@@ -70,6 +72,7 @@ const UpperLegRight = styled("div")<Props>`
   background-color: ${({ theme }: Props) => theme.colors.legs};
   position: absolute;
   bottom: 1%;
+
   right: 25%;
   border-radius: 50% 50% 45% 0%;
   transform-origin: bottom;
@@ -91,6 +94,7 @@ const LowerLegRight = styled("div")<Props>`
   opacity: 1;
   position: absolute;
   bottom: 1%;
+
   right: 19.7%;
   border-radius: 50% 50% 45% 45%;
   transform-origin: bottom;
@@ -112,6 +116,7 @@ const FootRight = styled("div")`
   opacity: 1;
   position: absolute;
   bottom: 0;
+
   right: 8.8%;
   border-radius: 0% 80% 00% 00%;
 `;
@@ -125,6 +130,7 @@ export const LeftLeg = ({ animation }: LegProps) => {
     </div>
   );
 };
+
 
 export const RightLeg = ({ animation }: LegProps) => {
   return (

@@ -75,6 +75,7 @@ const Froggy = () => {
     <Container>
       <Button onClick={() => handleClick()}>Button</Button>
       <LeftArm />
+
       <LeftLeg animation={animation} />
       <LeftEye />
       <RightArm />
