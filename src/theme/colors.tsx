@@ -5,6 +5,10 @@ const normal = {
     legs: "hsl(126, 40%, 43%)",
     arms: "hsl(126, 45%, 48%)",
     border: "hsl(126, 45%, 41%)"
+
+  },
+  animationData: {
+    ankle: "3%"
   }
 };
 

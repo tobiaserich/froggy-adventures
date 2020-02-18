@@ -32,11 +32,11 @@ const Body = styled("div")<Props>`
   left: 25%;
   right: 25%;
   animation: ${({ animation }: Props) =>
-      animation === "yes" ? "animation" : "none"}
-    1s both;
+      animation === "yes" ? "animationBody" : "none"}
+    1s forwards;
   @keyframes none {
   }
-  @keyframes animation {
+  @keyframes animationBody {
     ${animations.body}
   }
 `;
@@ -75,10 +75,11 @@ const Froggy = () => {
     <Container>
       <Button onClick={() => handleClick()}>Button</Button>
       <LeftArm />
-      <LeftLeg />
+
+      <LeftLeg animation={animation} />
       <LeftEye />
       <RightArm />
-      <RightLeg />
+      <RightLeg animation={animation} />
       <RightEye />
       <Body animation={animation}>
         <Mouth />
