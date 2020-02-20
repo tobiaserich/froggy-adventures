@@ -5,6 +5,10 @@ type Props = {
   theme: any;
 };
 
+const Container = styled("div")`
+  opacity: 0;
+`;
+
 const ArmLeft = styled("div")`
   width: 8%;
   height: 35.5%;
@@ -32,7 +36,6 @@ const HandLeft = styled("div")`
   border-radius: 80% 5% 0% 0%;
 
   opacity: 1;
-
 `;
 
 const ArmRight = styled("div")`
@@ -64,18 +67,18 @@ const HandRight = styled("div")`
 
 export const LeftArm = () => {
   return (
-    <div>
+    <Container>
       <ArmLeft />
       <HandLeft />
-    </div>
+    </Container>
   );
 };
 
 export const RightArm = () => {
   return (
-    <div>
+    <Container>
       <ArmRight />
       <HandRight />
-    </div>
+    </Container>
   );
 };

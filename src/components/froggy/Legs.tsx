@@ -55,7 +55,7 @@ const LowerLegLeft = styled("div")<Props>`
 `;
 
 const FootLeft = styled("div")`
-  width: 20%;
+  width: 17.2%;
   height: 5%;
   background-color: ${({ theme }: Props) => theme.colors.legs};
   opacity: 1;
@@ -110,7 +110,7 @@ const LowerLegRight = styled("div")<Props>`
 `;
 
 const FootRight = styled("div")`
-  width: 20%;
+  width: 17.2%;
   height: 5%;
   background-color: ${({ theme }: Props) => theme.colors.legs};
   opacity: 1;
@@ -130,7 +130,6 @@ export const LeftLeg = ({ animation }: LegProps) => {
     </div>
   );
 };
-
 
 export const RightLeg = ({ animation }: LegProps) => {
   return (
