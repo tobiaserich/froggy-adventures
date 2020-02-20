@@ -1,26 +1,35 @@
 import React from "react";
 import styled from "@emotion/styled";
+import animations from "../animations/AnimationFront";
 
 type Props = {
-  theme: any;
+  theme?: any;
+  animation?: string;
 };
 
-const Eye = styled("div")`
+const Eye = styled("div")<Props>`
   height: 12.5%;
   width: 12.5%;
   background-color: ${({ theme }: Props) => theme.colors.frogBody};
   border-radius: 40px 40px 0px 0px;
+  bottom: 45%;
+  animation: ${({ animation }: Props) =>
+      animation === "yes" ? "animationEye" : "none"}
+    1s forwards;
+  @keyframes none {
+  }
+  @keyframes animationEye {
+    ${animations.eyes}
+  }
 `;
 const EyeLeft = styled(Eye)`
   position: absolute;
-  bottom: 45%;
   left: 23%;
   z-index: 2;
   transform: rotate(-30deg);
 `;
 const EyeRight = styled(Eye)`
   position: absolute;
-  bottom: 45%;
   right: 23%;
   z-index: 2;
   transform: rotate(30deg);
@@ -82,9 +91,9 @@ const BrowRight = styled("div")`
   transform: rotate(-60deg);
 `;
 
-export const LeftEye = () => {
+export const LeftEye = ({ animation }: Props) => {
   return (
-    <EyeLeft>
+    <EyeLeft animation={animation}>
       <BrowLeft />
       <EyeBall>
         <PupilLeft />
@@ -93,9 +102,9 @@ export const LeftEye = () => {
   );
 };
 
-export const RightEye = () => {
+export const RightEye = ({ animation }: Props) => {
   return (
-    <EyeRight>
+    <EyeRight animation={animation}>
       <BrowRight />
       <EyeBall>
         <PupilRight />

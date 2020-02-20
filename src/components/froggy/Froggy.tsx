@@ -77,10 +77,10 @@ const Froggy = () => {
       <LeftArm />
 
       <LeftLeg animation={animation} />
-      <LeftEye />
+      <LeftEye animation={animation} />
       <RightArm />
       <RightLeg animation={animation} />
-      <RightEye />
+      <RightEye animation={animation} />
       <Body animation={animation}>
         <Mouth />
         <Belly />
